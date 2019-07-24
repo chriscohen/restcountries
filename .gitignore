@@ -1,0 +1,9 @@
+# PhpStorm
+.idea
+
+# Composer
+/vendor
+
+# Wouldn't usually ignore composer.lock in development but since this is going to be deployed
+# on an unknown system, it is better not to include it in the repository.
+composer.lock

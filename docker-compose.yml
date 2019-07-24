@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  web:
+    build:
+      context: ./.docker/website
+    ports:
+      - "8900:80"
+    volumes:
+      - "./:/var/www"
+    networks:
+      restcountries:
+        ipv4_address: 172.27.1.100
+  database:
+    build:
+      context: ./.docker/database
+    ports:
+      - "3316:3306"
+    networks:
+      restcountries:
+        ipv4_address: 172.27.1.101
+
+networks:
+  restcountries:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.27.1.0/24

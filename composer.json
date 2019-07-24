@@ -1,0 +1,12 @@
+{
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "namnv609/php-rest-countries": "1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ChrisCohen\\": "src/"
+    }
+  }
+}
