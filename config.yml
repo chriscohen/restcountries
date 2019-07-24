@@ -1,0 +1,6 @@
+database:
+  host: 172.27.1.101
+  user: root
+  pass: root
+  name: restcountries
+  port: 3306
