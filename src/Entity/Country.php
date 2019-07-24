@@ -15,6 +15,11 @@ class Country extends AbstractEntity
     /**
      * @var string
      */
+    protected $capital;
+
+    /**
+     * @var string
+     */
     protected $alpha2;
 
     /**
@@ -71,6 +76,22 @@ class Country extends AbstractEntity
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCapital(): string
+    {
+        return $this->capital;
+    }
+
+    /**
+     * @param string $capital
+     */
+    public function setCapital(string $capital): void
+    {
+        $this->capital = $capital;
     }
 
     /**
@@ -251,6 +272,7 @@ class Country extends AbstractEntity
         $output = new stdClass();
         $output->id = $this->getId();
         $output->name = $this->getName();
+        $output->capital = $this->getCapital();
         $output->alpha2 = $this->getAlpha2();
         $output->alpha3 = $this->getAlpha3();
         $output->numericCode = $this->getNumericCode();

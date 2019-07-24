@@ -88,6 +88,7 @@ class EntityManager
             $country = new Country();
             $country->setId($row['id']);
             $country->setName($row['name']);
+            $country->setCapital($row['capital']);
             $country->setAlpha2($row['alpha2']);
             $country->setAlpha3($row['alpha3']);
             $country->setNumericCode($row['numeric_code']);
