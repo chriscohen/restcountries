@@ -89,8 +89,8 @@ CREATE TABLE `langs` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `native_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `UNIQ_37C4469377153098` (`iso639_1`),
-  UNIQUE KEY `UNIQ_37C4469377153098` (`iso639_2`)
+  UNIQUE KEY `UNIQ_37C4469311153098` (`iso639_1`),
+  UNIQUE KEY `UNIQ_37C4462377153098` (`iso639_2`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 # We need another many-many relationship since countries can have multiple languages and languages
@@ -99,8 +99,8 @@ CREATE TABLE `countries_langs` (
    `country` int(10) unsigned NOT NULL,
    `lang` int(10) unsigned NOT NULL,
    PRIMARY KEY (`lang`,`country`),
-   KEY `IDX_403EA91B38248177` (`lang`),
-   KEY `IDX_403EA91BF92F1094` (`country`),
-   CONSTRAINT `FK_403EA91B38248771` FOREIGN KEY (`lang`) REFERENCES `langs` (`id`),
-   CONSTRAINT `FK_403EA91BF92F3C65` FOREIGN KEY (`country`) REFERENCES `countries` (`id`)
+   KEY `IDX_403EA91B38048177` (`lang`),
+   KEY `IDX_403EA91B992F1094` (`country`),
+   CONSTRAINT `FK_403E111B38248771` FOREIGN KEY (`lang`) REFERENCES `langs` (`id`),
+   CONSTRAINT `FK_403EA91BF45F3C65` FOREIGN KEY (`country`) REFERENCES `countries` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
