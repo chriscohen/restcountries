@@ -69,6 +69,16 @@ class DatabaseConnection
     }
 
     /**
+     * Get the ID of the last row inserted.
+     *
+     * @return string
+     */
+    public function getLastInsertId() : string
+    {
+        return $this->connection->lastInsertId();
+    }
+
+    /**
      * Run a database query.
      *
      * @param string $sql

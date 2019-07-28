@@ -5,6 +5,7 @@
  */
 
 use NNV\RestCountries;
+use ChrisCohen\Manager\EntityManager;
 
 /**
  * These are the API calls that will be made using the specified term.
@@ -18,6 +19,8 @@ define('SEARCHES', [
 ]);
 
 require_once('../vendor/autoload.php');
+
+$entityManager = new EntityManager();
 
 // Make sure we have a "query" in the querystring, or bail out.
 if (empty($_GET['query'])) {
@@ -45,6 +48,9 @@ foreach (SEARCHES as $searchType) {
 
     $output = array_merge($output, $response);
 }
+
+// Add any new entities to the database, if necessary.
+$entityManager->parseCountries($output);
 
 // Turn the arary back to JSON for output.
 $response = json_encode($output);

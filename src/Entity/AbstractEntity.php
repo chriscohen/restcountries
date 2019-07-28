@@ -11,6 +11,13 @@ abstract class AbstractEntity
     protected $id;
 
     /**
+     * Whether or not the entity is stored in the database with no changes.
+     *
+     * @var bool
+     */
+    protected $inDatabase = false;
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -24,5 +31,21 @@ abstract class AbstractEntity
     public function setId(int $id): void
     {
         $this->id = $id;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isInDatabase(): bool
+    {
+        return $this->inDatabase;
+    }
+
+    /**
+     * @param bool $inDatabase
+     */
+    public function setInDatabase(bool $inDatabase): void
+    {
+        $this->inDatabase = $inDatabase;
     }
 }
