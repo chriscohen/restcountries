@@ -17,7 +17,7 @@ CREATE TABLE `countries` (
   `alpha2` varchar(2) COLLATE utf8mb4_unicode_ci NOT NULL,
   `alpha3` varchar(3) COLLATE utf8mb4_unicode_ci NOT NULL,
   `numeric_code` varchar(3) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `calling_code` varchar(4) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `calling_code` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `capital` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `flag_url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `region` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
