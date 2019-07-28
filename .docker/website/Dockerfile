@@ -39,6 +39,9 @@ RUN apt-get -y install \
 # Clean up.
 RUN apt-get -y clean
 
+# Copy php.ini so we can display errors to the web browser.
+COPY php.ini /etc/php/7.3/apache2/php.ini
+
 # Copy the xdebug configuration file.
 COPY xdebug.ini /etc/php/7.3/mods-available/xdebug.ini
 
