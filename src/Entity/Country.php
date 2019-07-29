@@ -50,17 +50,17 @@ class Country extends AbstractEntity
     /**
      * @var Currency[]
      */
-    protected $currencies;
+    protected $currencies = [];
 
     /**
      * @var TimeZone[]
      */
-    protected $timezones;
+    protected $timezones = [];
 
     /**
      * @var Language[]
      */
-    protected $languages;
+    protected $languages = [];
 
     /**
      * @return string
