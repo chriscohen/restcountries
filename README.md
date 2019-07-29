@@ -107,3 +107,14 @@ associate it with being "+1".
 The autocomplete suggestions only show the name of the country, but this might lead to user confusion if the user has
 typed "London" because "Great Britain" is suggested. It would be better to fully customise the entries in the
 suggestions list, but I feel this is beyond the scope of the requirements.
+
+## Using xdebug
+
+If your IDE supports xdebug and you would like to step through the code, please edit the
+```/etc/php/7.3/apache2/conf.d/20-xdebug.ini``` file on the web container, and use your local machine's IP address.
+
+You will need to ```service apache2 restart``` which will shut down the container, so you will then need to up it again
+with ```docker-compose up -d```.
+
+Your IDE needs to accept remote xdebug connections on port 9000, and you need to map your project paths to **/var/www**
+on the remote side.
