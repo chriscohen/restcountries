@@ -9,6 +9,7 @@ require_once '../vendor/autoload.php';
         <title>RestCountries API implementation</title>
 
         <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/app.css"/>
     </head>
 
     <body class="bg-light">
@@ -24,6 +25,39 @@ require_once '../vendor/autoload.php';
             <div class="row">
                 <div class="col-sm-12">
                     <input type="text" name="input" class="typeahead"/>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12">
+                    <div class="card flex-md-row box-shadow" id="result" style="display: none;">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h3 id="country-name">Nigeria</h3>
+                            <div class="text-muted" id="region">Africa</div>
+                            <div class="table-responsive mt-2">
+                                <table class="table table-striped table-sm">
+                                    <tbody>
+                                        <tr>
+                                            <td>Calling Code</td>
+                                            <td>+<span id="calling-code">234</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Capital</td>
+                                            <td id="capital">Abuja</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Timezones</td>
+                                            <td id="timezones">UTC+01:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Currencies</td>
+                                            <td id="currencies">Nigerian naira</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <img id="flag" class="card-img-right flex-auto d-none d-md-block" style="max-width: 300px;"/>
+                    </div>
                 </div>
             </div>
         </div>
