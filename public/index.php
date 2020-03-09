@@ -8,7 +8,7 @@ require_once '../vendor/autoload.php';
     <head>
         <title>RestCountries API implementation</title>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-GpZ+McEis3rxQ2mOiwBzW8NQ7NvjXIsQsIRqV/8QJ2qDR4vdZSe0GrxMctJv74R7" crossorigin="anonymous">
         <link rel="stylesheet" href="css/app.css"/>
     </head>
 
@@ -62,10 +62,10 @@ require_once '../vendor/autoload.php';
             </div>
         </div>
 
-        <script src="js/jquery-3.4.1.js" integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo" crossorigin="anonymous"></script>
-        <script src="js/typeahead.bundle.js" integrity="sha384-up5m4qUNHDA0trts45bnm/JBBOfOMbOKtm/uAUX17yitl3RroI3RbrzmkWKBPT3w" crossorigin="anonymous"></script>
-        <script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.4.1.js" integrity="sha384-EK6R63hAXaEX5y24UMgRsVRAnE868K+H6JXpKWyK/rE8c0CSjQg/aJKUFodKGLkw" crossorigin="anonymous"></script>
+        <script src="js/typeahead.bundle.js" integrity="sha384-wWj2d5hmrsgC1uD08vmE+XB9SZqNOpnFBAl7Vg+fGFzDBTJ68SUE3YKEzNz39B5y" crossorigin="anonymous"></script>
+        <script src="js/popper.min.js" integrity="sha384-MgX1msxO2MvLB8cnXqSF6XlqfQl+nuvf1p6ELnCmsfLb6aOEi/KW65/L8jpkABRT" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-/VDWkH4VukNJ5zgo0o3hx2681xuIAUYQq4hQprhdx0GnptNk7gk9kqH8yv6tEcwM" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
     </body>
 </html>
